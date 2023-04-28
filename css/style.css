@@ -40,7 +40,29 @@ body {
     color: #2D3134;
     font-weight: bolder;
     width: 109px;
+    position: relative;
+    text-shadow: 1px 2px 5px #FF7B29;
+    transition: 1.5s;
 }
+.home_hero_nav_logo_back{
+    width: 0px;
+    transition: 0.5s;
+}
+.home_hero_nav_logo:hover{
+    /* position: absolute;
+    background-color: red;
+    z-index: -1;
+    width: 109px;
+    height: 7px;
+    overflow: hidden;
+    top: 10px;
+    border-radius: 5px;
+    transition: 0.5s; */
+    letter-spacing:10px;
+    width: 190px;
+    transition: 1.5s;
+}
+
 
 .home_hero_nav_menu {
     display: flex;
@@ -87,6 +109,47 @@ body {
     transition: 0.2s;
 }
 
+.home_hero_nav_menus_showsub:hover .home_hero_nav_menus_sub {
+    /* display: block !important; */
+    height: 200px;
+    opacity: 1;
+    top: 15px;
+    transition: 0.3s;
+}
+
+.home_hero_nav_menus_sub {
+    /* display: none; */
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    height: 0px;
+    opacity: 0;
+    /* background-color: red; */
+    padding: 20px 0px;
+    /* border: 1px solid black; */
+    transition: 0.3s;
+}
+
+.home_hero_nav_menus_sub_menu {
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    /* padding:0px 10px; */
+}
+
+.home_hero_nav_menus_sub_menu a {
+    padding: 10px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.home_hero_nav_menus_sub_menu a:hover {
+    background-color: rgb(192, 192, 192);
+    transition: 0.2s;
+}
+
 
 .home_hero_nav_button {
     font-family: 'Poppins';
@@ -109,12 +172,14 @@ body {
 
 
 
+
 .home_hero_info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+    margin-top: 100px;
     width: 100%;
     align-self: center;
 }
@@ -174,8 +239,15 @@ body {
     cursor: pointer;
 }
 
-.home_hero_info_image {
+/* .home_hero_info_image {
     width: 50%;
+}
+
+.home_hero_info_image img {
+    width: 100%;
+} */
+.home_hero_info_image {
+    width: 45%;
 }
 
 .home_hero_info_image img {
@@ -414,6 +486,9 @@ body {
 
 
 
+
+
+/********* About Page ******/
 .about_about {
     margin-top: 140px;
 }
@@ -430,18 +505,119 @@ body {
     width: 200px;
     filter: drop-shadow(5px 5px 5px rgba(66, 55, 55, .79)) drop-shadow(-7px -7px 6px #625A5A);
 }
-.about_about_desc{
+
+.about_about_desc {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     /* color: #676A6C; */
-    margin: 45px 0;  
-    text-indent: 6ch; 
+    margin: 45px 0;
+    text-indent: 6ch;
 }
-.about_about_desc_p:nth-child(2){
+
+.about_about_desc_p:nth-child(2) {
     line-height: 28px;
-    text-indent: 6ch; 
+    text-indent: 6ch;
     margin-top: 10px;
     text-justify: distribute;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********Products Page  ********/
+.products {
+    display: flex;
+    flex-direction: row;
+}
+
+.prodcuts_plates {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodcuts_plates_plate {
+    margin-right: 30px;
+    margin-bottom: 26px;
+    /* padding: 15px; */
+    width: 386px;
+    /* height: 438px; */
+    background: #FFFFFF;
+    box-shadow: 0px 40px 90px rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prodcuts_plates_plate_img {
+    width: 356px;
+    height: 190px;
+    border-radius: 16px;
+    background: rgb(230, 230, 230);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.prodcuts_plates_plate_img img {
+    width: 50%;
+    transition: 2.5s;
+}
+.prodcuts_plates_plate_img:hover img{
+    transform: scale(1.5);
+    transition: 2.5s;
+}
+
+.prodcuts_plates_plate_name {
+    margin: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #2D3134;
+}
+
+.prodcuts_plates_plate_show {
+    width: 111px;
+    height: 38px;
+
+    border: 1px solid #31C3E0;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    color: #30BBD7;
+    margin:39px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.prodcuts_plates_plate_show:hover{
+    background-color:#30BBD7 ;
+    color: #ECECEC;
+    transition: 0.2s;
 }
