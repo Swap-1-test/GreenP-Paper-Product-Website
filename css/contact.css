@@ -56,7 +56,8 @@
     border-radius: 12px;
     margin-bottom: 30px;
     overflow: hidden;
-    background: white;
+    background-color: rgb(234, 234, 234);
+    /* box-shadow: 3px 3px 5px rgb(164, 164, 164); */
     /* border-bottom: 1px solid white; */
  
 }
